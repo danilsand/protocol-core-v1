@@ -2,7 +2,7 @@
 
 When performing an upgrade on EVM contracts, the biggest risk is to introduce storage layout collisions. This may degrade a contract storage, which can do things like change token balances, change a stored address to other contract for garbage data, etc.
 
-These errors might harder to detect, even happening some time after deployment.
+These errors might be harder to detect, even happening some time after deployment.
 
 In order to prevent this:
 
@@ -24,7 +24,7 @@ https://github.com/Ramarti/protocol-core-v1/blob/v1.1.0_upgrade_script/contracts
 
 This is largely a manual task, but there is a process and some commands that could help
 
-2.2.1 First, git clone the old tag in a folder inside the repo. Make sure it’s gitignored, you must delete later
+2.2.1 First, git clone the old tag in a folder inside the repo. Make sure it’s git-ignored, you must delete later
 
 ```jsx
 git clone --depth 1 --branch v1.0.0 git@github.com:storyprotocol/protocol-core-v1.git v1.0.0
@@ -200,7 +200,7 @@ contract ExecuteV1_2 is UpgradeExecutor {
 
 ## 5. Execute the scripts
 
-Script name will deppend on your file names. For example:
+Script name will depend on your file names. For example:
 
 Deployment (remember to verify)
 ```
